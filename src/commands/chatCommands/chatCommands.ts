@@ -34,8 +34,8 @@ chat.registerCmd('online', (player: Player, args: any) => {
     let playersOnline = alt.players.length;
 
     if (playersOnline > 1) {
-        return chat.send(player, `There are currently {49E298}${alt.players.length}{FFFFFF} players online.`);
+        return chat.send(player, `There are currently {49E298}${playersOnline}{FFFFFF} players online.`);
     } else {
-        return chat.send(player, `There is currently {49E298}${alt.players.length}{FFFFFF} player online.`);
+        return chat.send(player, `There is currently {49E298}${playersOnline}{FFFFFF} player online.`);
     }
 })
