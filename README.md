@@ -14,7 +14,7 @@ This project is a boilerplate made for Alt:V MP, It uses TypeScript as it's main
 1. Install the .exe file that comes with Alt:V MP's .zip file.
 2. Clone this repository with GitHub Desktop, and run **npm install** in the root directory.
 3. Open **server.cfg** and adjust the token to the one Alt:V provides you when registering a server.
-3. Make your changes using your favorite text editor and compile using **compile.bat**:
+3. Make your changes using your favorite text editor and compile using **compile.bat**:  
 *The compiler will compile your changes and automatically start the server.*
 4. Log into your test server and begin developing!
 
