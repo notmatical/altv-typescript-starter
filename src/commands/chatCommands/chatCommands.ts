@@ -5,7 +5,12 @@ chat.registerCmd('pos', (player: Player, args: any) => {
     return chat.send(player, `X: ${player.pos.x}, Y: ${player.pos.y}, Z: ${player.pos.z}`);
 });
 
-chat.registerCmd('tp', (player: Player, x: number, y: number, z: number) => {
+chat.registerCmd('tp', (player: Player, args: any) => {
+
+    let x = args[0];
+    let y = args[1];
+    let z = args[2];
+
     if (isNaN(x) || isNaN(y) || isNaN(z)) {
         chat.send(player, `{E24A5A}USAGE:{FFFFFF} /tp [x] [y] [z]`);
         chat.send(player, `{E24A5A}[ ! ]{FFFFFF} Don't seperate coords with commas.`);
