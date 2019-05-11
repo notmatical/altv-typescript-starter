@@ -25,7 +25,7 @@ chat.registerCmd('tp', (player: Player, args: any) => {
 chat.registerCmd('veh', (player: Player, model: string) => {
     if (model.toString().trim().length <= 0) return chat.send(player, `{E24A5A}USAGE:{FFFFFF} /veh [model]`);
 
-    let vehicle = alt.createVehicle(model.toString(), player.pos.x, player.pos.y, player.pos.z, 180);
+    let vehicle = alt.createVehicle(model.toString(), player.pos.x, player.pos.y, player.pos.z, 0, 0, 0);
     vehicle.numberPlateText = "MATICAL";
 
     return chat.send(player, `You've spawned a temporary {E24A5A}${model}{FFFFFF}.`);
